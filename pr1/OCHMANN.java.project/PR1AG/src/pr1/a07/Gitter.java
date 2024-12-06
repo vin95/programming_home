@@ -28,12 +28,14 @@ public class Gitter implements Drawable {
 		
 		g.setColor(color);
 		
-		for(int x = STARTVALUE; x == ENDVALUE; x += dist  ) {
-			g.drawLine(x, STARTVALUE, x, ENDVALUE);
-		}
+//		for(int x = STARTVALUE; x == ENDVALUE; x += dist  ) {
+//			g.drawLine(x, STARTVALUE, x, ENDVALUE);
+//		}
+//		
+//		for(int y = STARTVALUE; y == ENDVALUE; y+= dist  ) {
+//			g.drawLine(STARTVALUE, y, ENDVALUE, y);
+//		}
 		
-		for(int y = STARTVALUE; y == ENDVALUE; y+= dist  ) {
-			g.drawLine(STARTVALUE, y, ENDVALUE, y);
-		}
+		g.drawLine(STARTVALUE, STARTVALUE, ENDVALUE, ENDVALUE);
 	}
 }
