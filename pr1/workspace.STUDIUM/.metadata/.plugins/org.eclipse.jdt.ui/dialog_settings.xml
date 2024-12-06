@@ -13,10 +13,10 @@
 	</section>
 	<section name="JavaProjectWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="706"/>
-		<item key="DIALOG_Y_ORIGIN" value="222"/>
-		<item key="DIALOG_WIDTH" value="746"/>
-		<item key="DIALOG_HEIGHT" value="799"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_Y_ORIGIN" value="95"/>
+		<item key="DIALOG_WIDTH" value="1028"/>
+		<item key="DIALOG_HEIGHT" value="931"/>
+		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|10.0|0|GTK|1|"/>
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
@@ -28,9 +28,9 @@
 	<section name="NewClassCreationWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="706"/>
 		<item key="DIALOG_Y_ORIGIN" value="222"/>
-		<item key="DIALOG_WIDTH" value="574"/>
-		<item key="DIALOG_HEIGHT" value="659"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="639"/>
+		<item key="DIALOG_HEIGHT" value="746"/>
+		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|10.0|0|GTK|1|"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

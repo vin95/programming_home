@@ -1,7 +1,7 @@
-INDEX VERSION 1.134+E:\BHT\pr1\workspace.STUDIUM\.metadata\.plugins\org.eclipse.jdt.core
-30329764.index
+INDEX VERSION 1.134+/home/vincent/programming_home/pr1/workspace.STUDIUM/.metadata/.plugins/org.eclipse.jdt.core
+2667584314.index
+2888074082.index
+4178297702.index
+979123058.index
+1882252661.index
 1865797976.index
-3085583389.index
-662088548.index
-1530087001.index
-1115738508.index
