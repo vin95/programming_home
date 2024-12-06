@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="false"/>
+	<list key="replacehistory">
+		<item value="ArrayList&lt;Adresse&gt;"/>
+		<item value="ArrayList&lt;Integer&gt;"/>
+	</list>
+	<list key="searchhistory">
+		<item value="AdressList"/>
+		<item value="AdresseList"/>
+		<item value="Integer"/>
+	</list>
+</section>

@@ -1,0 +1,29 @@
+**********************************************************************************
+[deutsch]
+
+Copyright:
+© 2006..2024 Prof. Dr. Joachim Schimkat, Berlin, Germany. Alle Rechte vorbehalten. 
+
+Lizenz:
+Der Gebrauch der lernhilfe-Library ist nur 
+im Programmierunterricht von Prof. Dr. Schimkat (BHT Berlin) zulässig.
+ 
+Warnung:
+Die Library ist experimentell. Der Gebrauch erfolgt auf eigene Gefahr.  
+Keine Garantie irgendwelcher Art.
+
+**********************************************************************************
+[english]
+
+Copyright:
+© 2006..2024 Prof. Dr. Joachim Schimkat, Berlin, Germany. All Rights Reserved. 
+
+License:
+Legal use of the lernhilfe-Library is restricted to educational use 
+in the computer science courses of Prof. Dr. Schimkat (BHT Berlin).
+
+Warning:
+The library is experimental. Use is on your own risk. 
+No guaranty of any kind.
+
+**********************************************************************************

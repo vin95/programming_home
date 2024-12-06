@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+E:\BHT\pr1\workspace.STUDIUM\.metadata\.plugins\org.eclipse.jdt.core
+30329764.index
+1865797976.index
+3085583389.index
+662088548.index
+1530087001.index
+1115738508.index

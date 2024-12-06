@@ -1,0 +1,146 @@
+package pr1.a05.ue;
+
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import schimkat.berlin.lernhilfe2024ws.io.FunnyFirstFileReader;
+import schimkat.berlin.lernhilfe2024ws.objectPlay.Adresse;
+import schimkat.berlin.lernhilfe2024ws.objectPlay.Einwohner;
+import schimkat.berlin.lernhilfe2024ws.objectPlay.EinwohnerList;
+import schimkat.berlin.lernhilfe2024ws.objectPlay.Factory;
+import schimkat.berlin.lernhilfe2024ws.objectPlay.Person;
+import schimkat.berlin.lernhilfe2024ws.objectPlay.PersonList;
+
+public class AdressPlay {
+	public static void main(String[] args) {
+		PrintWriter out = new PrintWriter(System.out);
+		adressListTest(out);
+		Scanner in = new Scanner("2222 Entenhausen Teichweg 4");
+		Scanner in2 = new Scanner("2222 Entenhausen Teichweg 4 2222 Entenhausen Teichweg 4 2222 Entenhausen Teichweg 4 2222 Entenhausen Teichweg 4");
+		Scanner in3 = new Scanner("2222 Entenhausen Teichweg 4 2222 Entenhausen Teichweg 4 2222 Entenhausen Teichweg 4 2222 Entenhausen Teichweg 4");
+		out.println();
+		out.println("Adresse: " + createAdresse(in));
+		out.println();
+		out.println("Adressenliste: ");
+		
+		int adresslistSize = createAdressen(in3).size();
+		ArrayList<Adresse> Adresslist = createAdressen(in2);
+		for (int i=0; i<adresslistSize; i++) {
+			out.println(Adresslist.get(i).toString());
+		}
+		out.println();
+		int adresslistSize2 = createAdressen("./data/testfiles/adressen1.txt").size();
+		ArrayList<Adresse> Adresslist2 = createAdressen("./data/testfiles/adressen1.txt");
+		for (int i=0; i<adresslistSize2; i++) {
+			out.println(Adresslist2.get(i).toString());
+		}
+		
+		out.flush();
+		someInhabitants();
+	}
+	
+	public static ArrayList<Adresse> createTestAdresses() {
+		Adresse adresse1 = new Adresse(12163, "Berlin", "Berliner Strasse", 59);
+		Adresse adresse2 = new Adresse(13509, "Berlin", "Talweg", 7);
+		Adresse adresse3 = new Adresse(12157, "Berlin", "Hansaplatz", 13);
+		Adresse adresse4 = new Adresse(adresse1, 60);
+		Adresse adresse5 = new Adresse(adresse2, 1);
+		Adresse adresse6 = new Adresse(25678, "Hamburg", "Maibacher Strasse", 59);
+		Adresse adresse7 = new Adresse(25643, "Hamburg", "Bauernpfad", 66);
+		Adresse adresse8 = new Adresse(24563, "Hamburg", "Marienplatz", 25);
+		Adresse adresse9 = new Adresse(adresse6, 15);
+		Adresse adresse10 = new Adresse(adresse7, 4);
+		
+		ArrayList<Adresse>myAdressList = new ArrayList<>(List.of(
+				adresse1,
+				adresse2,
+				adresse3,
+				adresse4,
+				adresse5,
+				adresse6,
+				adresse7,
+				adresse8,
+				adresse9
+		));
+		
+		myAdressList.add(adresse10);
+		
+		return myAdressList;
+	}
+	
+	public static void adressListTest(PrintWriter out) {
+		ArrayList<Adresse> myAdressList = createTestAdresses();
+		for(Adresse adresse : myAdressList) {
+			out.println(adresse);
+		}
+	}
+	
+	public static void someInhabitants() {
+		PrintWriter out2 = new PrintWriter(System.out);
+		PersonList list = Factory.createTestPersonliste();
+		PersonList myPersonList = new PersonList();
+		ArrayList<Adresse> myAdressList = createTestAdresses();
+		
+		out2.println();
+		
+		for (int i=0; i<6; i++) {
+			Person a = list.get(i);
+			myPersonList.add(a);
+		}
+		
+		Einwohner inhabitant1 = new Einwohner(myPersonList.get(0), myAdressList.get(0));
+		Einwohner inhabitant2 = new Einwohner(myPersonList.get(1), myAdressList.get(1));
+		Einwohner inhabitant3 = new Einwohner(myPersonList.get(2), myAdressList.get(2));
+		Einwohner inhabitant4 = new Einwohner(myPersonList.get(3), myAdressList.get(3));
+		Einwohner inhabitant5 = new Einwohner(myPersonList.get(4), myAdressList.get(4));
+		Einwohner inhabitant6 = new Einwohner(myPersonList.get(5), myAdressList.get(5));
+		
+		EinwohnerList inhabitants = EinwohnerList.of(inhabitant1, inhabitant2, inhabitant3, inhabitant4, inhabitant5, inhabitant6);
+		
+		for(Einwohner inhabitant : inhabitants) {
+			out2.println(inhabitant);
+		}
+		
+		out2.println();
+		
+		inhabitant6.umziehenNach(myAdressList.get(4));
+		inhabitant5.umziehenNach(myAdressList.get(3));
+		inhabitant4.umziehenNach(myAdressList.get(5));
+		
+		for(Einwohner inhabitant : inhabitants) {
+			out2.println(inhabitant);
+		}
+		out2.flush();
+	}
+	
+	public static Adresse createAdresse (Scanner in) {
+		int plz = Integer.parseInt(in.next());
+		String ort = in.next();
+		String straße = in.next();
+		int hausNr = Integer.parseInt(in.next());
+		Adresse adresse = new Adresse(plz, ort, straße, hausNr);
+		return adresse;
+	}
+	
+	public static ArrayList<Adresse> createAdressen(Scanner in) {
+		ArrayList<Adresse> adresslist = new ArrayList<Adresse>();
+		while (in.hasNext()) {
+			int plz = Integer.parseInt(in.next());
+			String ort = in.next();
+			String straße = in.next();
+			int hausNr = Integer.parseInt(in.next());
+			Adresse adresse = new Adresse(plz, ort, straße, hausNr);
+			adresslist.add(adresse);
+		}
+		return adresslist;
+	}
+	
+	public static ArrayList<Adresse> createAdressen(String filename) {
+		Scanner in = new Scanner(new FunnyFirstFileReader(filename));
+		ArrayList<Adresse> adresslist = createAdressen(in);
+		in.close();
+		return adresslist;
+	}
+}
