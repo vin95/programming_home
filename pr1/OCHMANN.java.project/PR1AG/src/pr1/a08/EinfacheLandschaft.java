@@ -7,11 +7,16 @@ import schimkat.berlin.lernhilfe2024ws.graphics.Drawable;
 
 public class EinfacheLandschaft implements Drawable {
 	final static Color HORIZONTCOLOR = Color.BLACK;
-	final static Color HORIZONTKOORDINATE = Color.BLACK;
+	final static int HORIZONT_Y = 150;
+	final static int HORIZONT_WIDTH = 800;
+	final static int SKYHEIGHT = 150;
+	final static int HORIZONT_LINEHEIGHT = 1;
+	final static int LANDHEIGHT = 100;
+	final static int LANDSCAPE_HEIGHT = SKYHEIGHT + HORIZONT_LINEHEIGHT + LANDHEIGHT;
 	protected Color skyColor;
 	protected Color landColor;
 	
-	//vollständiger Konstruktor
+	//vollstï¿½ndiger Konstruktor
 	public EinfacheLandschaft(Color skyColor, Color landColor) {
 		this.skyColor = skyColor;
 		this.landColor = landColor;
@@ -29,11 +34,11 @@ public class EinfacheLandschaft implements Drawable {
 	
 	public void draw(Graphics g) {
 		g.setColor(skyColor);
-		g.fillRect(0, 0, 500, 150);
+		g.fillRect(0, 0, HORIZONT_WIDTH, 150);
 		g.setColor(HORIZONTCOLOR);
-		g.drawLine(0, 150, 500, 150);
+		g.drawLine(0, HORIZONT_Y, HORIZONT_WIDTH, HORIZONT_Y);
 		g.setColor(landColor);
-		g.fillRect(0, 151, 500, 100);
+		g.fillRect(0, HORIZONT_Y + 1, HORIZONT_WIDTH, LANDHEIGHT);
 	}
 	
 	public Color getSkyColor() {

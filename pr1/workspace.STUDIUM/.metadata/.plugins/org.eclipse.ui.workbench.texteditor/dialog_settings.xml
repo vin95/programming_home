@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
-	<item key="replaceBarOpen" value="false"/>
+	<item key="replaceBarOpen" value="true"/>
 	<list key="replacehistory">
+		<item value="TreesOffsetX"/>
+		<item value="HEIGHT_TREETRUNKS"/>
+		<item value="HEIGHT_TREECROWNS"/>
+		<item value="WIDTH_TREECROWNS"/>
+		<item value="WIDTH_TREETRUNKS"/>
 		<item value="ArrayList&lt;Adresse&gt;"/>
 		<item value="ArrayList&lt;Integer&gt;"/>
 	</list>
 	<list key="searchhistory">
+		<item value="offsetX"/>
+		<item value="HEIGHT_OF_TREETRUNKS"/>
+		<item value="HEIGHT_OF_TREECROWNS"/>
+		<item value="WIDTH_OF_TREECROWNS"/>
+		<item value="WIDTH_OF_TREETRUNKS"/>
 		<item value="colors"/>
 		<item value="AdressList"/>
 		<item value="AdresseList"/>
