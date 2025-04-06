@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"schimkat.berlin.lernhilfe2024ws.graphics"},{"l":"schimkat.berlin.lernhilfe2024ws.graphics.shape"},{"l":"schimkat.berlin.lernhilfe2024ws.graphics.simple"}];updateSearchResults();
