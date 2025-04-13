@@ -1,4 +1,4 @@
-package pr2.a01;
+package pr2.a02;
 
 import java.io.PrintWriter;
 import java.util.Arrays;

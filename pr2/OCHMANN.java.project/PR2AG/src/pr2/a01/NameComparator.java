@@ -1,9 +1,9 @@
-package pr2.a02;
+package pr2.a01;
 
 import java.io.File;
 import java.util.Comparator;
 
-public abstract class NameComparator implements Comparator<File>{
+public class NameComparator implements Comparator<File>{
 
 	@Override
 	public int compare(File f1, File f2) {
