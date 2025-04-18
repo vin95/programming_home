@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-04-18T09:56:17.955123115Z</date>
+  <millis>1744970177955</millis>
+  <nanos>123115</nanos>
+  <sequence>21</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.956018075Z</date>
+  <millis>1744970177956</millis>
+  <nanos>18075</nanos>
+  <sequence>22</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>Logger101</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>RETURN</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.956576281Z</date>
+  <millis>1744970177956</millis>
+  <nanos>576281</nanos>
+  <sequence>23</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>Logger101</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>ENTRY</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.957058520Z</date>
+  <millis>1744970177957</millis>
+  <nanos>58520</nanos>
+  <sequence>24</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>appending LINE</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.958041780Z</date>
+  <millis>1744970177958</millis>
+  <nanos>41780</nanos>
+  <sequence>25</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.961412215Z</date>
+  <millis>1744970177961</millis>
+  <nanos>412215</nanos>
+  <sequence>26</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>appending LINE</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.962052003Z</date>
+  <millis>1744970177962</millis>
+  <nanos>52003</nanos>
+  <sequence>27</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.962775705Z</date>
+  <millis>1744970177962</millis>
+  <nanos>775705</nanos>
+  <sequence>28</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.963375744Z</date>
+  <millis>1744970177963</millis>
+  <nanos>375744</nanos>
+  <sequence>29</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>appending LINE</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.963908632Z</date>
+  <millis>1744970177963</millis>
+  <nanos>908632</nanos>
+  <sequence>30</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.964410394Z</date>
+  <millis>1744970177964</millis>
+  <nanos>410394</nanos>
+  <sequence>31</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.965027761Z</date>
+  <millis>1744970177965</millis>
+  <nanos>27761</nanos>
+  <sequence>32</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.965609571Z</date>
+  <millis>1744970177965</millis>
+  <nanos>609571</nanos>
+  <sequence>33</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>Logger101</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>RETURN</message>
+</record>
+<record>
+  <date>2025-04-18T09:56:17.966127339Z</date>
+  <millis>1744970177966</millis>
+  <nanos>127339</nanos>
+  <sequence>34</sequence>
+  <logger>triangleLogger</logger>
+  <level>INFO</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>finished triangles &gt;&gt; 
+ ------------------------ENDE</message>
+</record>
+</log>

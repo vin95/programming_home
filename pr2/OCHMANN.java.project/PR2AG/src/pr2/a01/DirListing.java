@@ -8,7 +8,9 @@ import java.util.List;
 
 public class DirListing {
 	private static final Comparator<File> DIR_FIRST_COMPARATOR = new DirFirstComparator();
-	private static final Comparator<File> NameComparator = new NameComparator();
+	private static final Comparator<File> NAME_COMPARATOR = new NameComparator();
+	private static final Comparator<File> DIR_FIRST_AND_NAME_COMPARATOR = DIR_FIRST_COMPARATOR.thenComparing(NAME_COMPARATOR);
+	private static final String PFAD ="/home/vincent/Downloads/commons-geometry-1.0-src";
 
 	public static void printLines(PrintWriter out, List<String> lines) {
 		for (String line : lines) {
@@ -41,7 +43,7 @@ public class DirListing {
 	
 	public static void main(String[] args) {
 		PrintWriter out = new PrintWriter(System.out);
-		String path = "test";
-		printLines(out, contentOfDir(path, NameComparator));
+		String path = PFAD;
+		printLines(out, contentOfDir(path, DIR_FIRST_AND_NAME_COMPARATOR));
 	}
 }
