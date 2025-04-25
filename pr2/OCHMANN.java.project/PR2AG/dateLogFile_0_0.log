@@ -1,140 +1,22 @@
-Apr 18, 2025 11:49:50 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:49:50 AM pr2.a03.Date logMessage
+Apr 24, 2025 1:38:45 PM pr2.a04.Date logMessage
+SEVERE: falsches  Datum: 32.14.2009: month is out of scope [1..12], day is out of scope[1..31]
+Apr 24, 2025 1:38:45 PM pr2.a04.Date logMessage
+SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..31]
+Apr 24, 2025 1:38:45 PM pr2.a04.Date logMessage
 SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:49:50 AM pr2.a03.Date logMessage
+Apr 24, 2025 1:38:45 PM pr2.a04.Date logMessage
 SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:50:05 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:50:05 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:50:05 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:50:05 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:50:05 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:50:21 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:50:21 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:50:21 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:50:21 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:50:21 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:50:30 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:50:30 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:50:30 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:50:30 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:50:30 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:50:40 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:50:40 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:50:40 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:50:40 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:50:40 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:50:56 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:50:56 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:50:56 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:50:56 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:50:56 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:51:09 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:51:09 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:51:09 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:51:09 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:51:09 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:51:39 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:51:39 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:51:39 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:51:39 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:51:39 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:52:07 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:52:07 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:52:07 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:52:07 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:52:07 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:52:33 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:52:33 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:52:33 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:52:33 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:52:33 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:53:38 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:53:38 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:53:38 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:53:38 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:53:38 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:53:54 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:53:54 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:53:54 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:53:54 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:53:54 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 18, 2025 11:53:54 AM pr2.a03.DateProvider provideDates
-SEVERE: 21.10.2000 wurde der Datumsliste hinzugefügt!
-Apr 18, 2025 11:53:54 AM pr2.a03.DateProvider provideDates
-SEVERE: 22.01.2001 wurde der Datumsliste hinzugefügt!
-Apr 18, 2025 11:53:54 AM pr2.a03.DateProvider provideDates
-SEVERE: 07.07.3009 wurde der Datumsliste hinzugefügt!
-Apr 18, 2025 11:53:54 AM pr2.a03.DateProvider provideDates
-SEVERE: 31.04.2009 wurde der Datumsliste hinzugefügt!
-Apr 18, 2025 11:53:54 AM pr2.a03.DateProvider provideDates
-SEVERE: 30.02.2009 wurde der Datumsliste hinzugefügt!
-Apr 18, 2025 11:53:54 AM pr2.a03.DateProvider provideDates
-SEVERE: 15.13.2009 wurde der Datumsliste hinzugefügt!
-Apr 18, 2025 11:53:54 AM pr2.a03.DateProvider provideDates
-SEVERE: 00.01.2009 wurde der Datumsliste hinzugefügt!
-Apr 18, 2025 11:54:01 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
-Apr 18, 2025 11:54:01 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 31.04.2009: day is out of scope[1..30]
-Apr 18, 2025 11:54:01 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..28]
-Apr 18, 2025 11:54:01 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 18, 2025 11:54:01 AM pr2.a03.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
+Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
+WARNING: 41.10.3001 wurde der Datumsliste hinzugefügt!
+Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
+WARNING: 22.01.2001 wurde der Datumsliste hinzugefügt!
+Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
+WARNING: 07.07.3009 wurde der Datumsliste hinzugefügt!
+Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
+WARNING: 32.14.2009 wurde der Datumsliste hinzugefügt!
+Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
+WARNING: 30.02.2009 wurde der Datumsliste hinzugefügt!
+Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
+WARNING: 15.13.2009 wurde der Datumsliste hinzugefügt!
+Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
+WARNING: 00.01.2009 wurde der Datumsliste hinzugefügt!

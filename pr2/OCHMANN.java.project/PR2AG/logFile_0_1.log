@@ -2,9 +2,165 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2025-04-18T08:26:01.253086702Z</date>
-  <millis>1744964761253</millis>
-  <nanos>86702</nanos>
+  <date>2025-04-24T10:33:19.574543572Z</date>
+  <millis>1745490799574</millis>
+  <nanos>543572</nanos>
+  <sequence>15</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.575410916Z</date>
+  <millis>1745490799575</millis>
+  <nanos>410916</nanos>
+  <sequence>16</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>appending LINE</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.576102203Z</date>
+  <millis>1745490799576</millis>
+  <nanos>102203</nanos>
+  <sequence>17</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.576757423Z</date>
+  <millis>1745490799576</millis>
+  <nanos>757423</nanos>
+  <sequence>18</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.577434119Z</date>
+  <millis>1745490799577</millis>
+  <nanos>434119</nanos>
+  <sequence>19</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.578059942Z</date>
+  <millis>1745490799578</millis>
+  <nanos>59942</nanos>
+  <sequence>20</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.578738884Z</date>
+  <millis>1745490799578</millis>
+  <nanos>738884</nanos>
+  <sequence>21</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.579418256Z</date>
+  <millis>1745490799579</millis>
+  <nanos>418256</nanos>
+  <sequence>22</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>Logger101</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>RETURN</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.579887978Z</date>
+  <millis>1745490799579</millis>
+  <nanos>887978</nanos>
+  <sequence>23</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>Logger101</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>ENTRY</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.580376286Z</date>
+  <millis>1745490799580</millis>
+  <nanos>376286</nanos>
+  <sequence>24</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>appending LINE</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.580946426Z</date>
+  <millis>1745490799580</millis>
+  <nanos>946426</nanos>
+  <sequence>25</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.581558659Z</date>
+  <millis>1745490799581</millis>
+  <nanos>558659</nanos>
+  <sequence>26</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINER</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangle</method>
+  <thread>1</thread>
+  <message>appending LINE</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.582116113Z</date>
+  <millis>1745490799582</millis>
+  <nanos>116113</nanos>
+  <sequence>27</sequence>
+  <logger>triangleLogger</logger>
+  <level>FINEST</level>
+  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
+  <method>triangleLine</method>
+  <thread>1</thread>
+  <message>appending *</message>
+</record>
+<record>
+  <date>2025-04-24T10:33:19.582639928Z</date>
+  <millis>1745490799582</millis>
+  <nanos>639928</nanos>
   <sequence>28</sequence>
   <logger>triangleLogger</logger>
   <level>FINEST</level>
@@ -14,9 +170,9 @@
   <message>appending *</message>
 </record>
 <record>
-  <date>2025-04-18T08:26:01.254200177Z</date>
-  <millis>1744964761254</millis>
-  <nanos>200177</nanos>
+  <date>2025-04-24T10:33:19.583178449Z</date>
+  <millis>1745490799583</millis>
+  <nanos>178449</nanos>
   <sequence>29</sequence>
   <logger>triangleLogger</logger>
   <level>FINER</level>
@@ -26,9 +182,9 @@
   <message>appending LINE</message>
 </record>
 <record>
-  <date>2025-04-18T08:26:01.255128554Z</date>
-  <millis>1744964761255</millis>
-  <nanos>128554</nanos>
+  <date>2025-04-24T10:33:19.583607767Z</date>
+  <millis>1745490799583</millis>
+  <nanos>607767</nanos>
   <sequence>30</sequence>
   <logger>triangleLogger</logger>
   <level>FINEST</level>
@@ -38,9 +194,9 @@
   <message>appending *</message>
 </record>
 <record>
-  <date>2025-04-18T08:26:01.256106717Z</date>
-  <millis>1744964761256</millis>
-  <nanos>106717</nanos>
+  <date>2025-04-24T10:33:19.584194187Z</date>
+  <millis>1745490799584</millis>
+  <nanos>194187</nanos>
   <sequence>31</sequence>
   <logger>triangleLogger</logger>
   <level>FINEST</level>
@@ -50,9 +206,9 @@
   <message>appending *</message>
 </record>
 <record>
-  <date>2025-04-18T08:26:01.257839697Z</date>
-  <millis>1744964761257</millis>
-  <nanos>839697</nanos>
+  <date>2025-04-24T10:33:19.585961891Z</date>
+  <millis>1745490799585</millis>
+  <nanos>961891</nanos>
   <sequence>32</sequence>
   <logger>triangleLogger</logger>
   <level>FINEST</level>
@@ -62,9 +218,9 @@
   <message>appending *</message>
 </record>
 <record>
-  <date>2025-04-18T08:26:01.258911557Z</date>
-  <millis>1744964761258</millis>
-  <nanos>911557</nanos>
+  <date>2025-04-24T10:33:19.586824338Z</date>
+  <millis>1745490799586</millis>
+  <nanos>824338</nanos>
   <sequence>33</sequence>
   <logger>triangleLogger</logger>
   <level>FINER</level>
@@ -74,9 +230,9 @@
   <message>RETURN</message>
 </record>
 <record>
-  <date>2025-04-18T08:26:01.259551492Z</date>
-  <millis>1744964761259</millis>
-  <nanos>551492</nanos>
+  <date>2025-04-24T10:33:19.587226160Z</date>
+  <millis>1745490799587</millis>
+  <nanos>226160</nanos>
   <sequence>34</sequence>
   <logger>triangleLogger</logger>
   <level>INFO</level>
@@ -87,21 +243,13 @@
  ------------------------ENDE</message>
 </record>
 </log>
-Apr 18, 2025 10:28:24 AM pr2.a03.DateTest main
-WARNING: Message with level warning
-Apr 18, 2025 10:28:24 AM pr2.a03.DateTest main
-SEVERE: Message with level severe
-Apr 18, 2025 10:29:10 AM pr2.a03.DateTest main
-WARNING: Message with level warning
-Apr 18, 2025 10:29:10 AM pr2.a03.DateTest main
-SEVERE: Message with level severe
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2025-04-18T09:56:17.852271156Z</date>
-  <millis>1744970177852</millis>
-  <nanos>271156</nanos>
+  <date>2025-04-24T10:33:40.885103368Z</date>
+  <millis>1745490820885</millis>
+  <nanos>103368</nanos>
   <sequence>0</sequence>
   <logger>triangleLogger</logger>
   <level>INFO</level>
@@ -112,9 +260,9 @@ SEVERE: Message with level severe
  &lt;&lt; testing triangles </message>
 </record>
 <record>
-  <date>2025-04-18T09:56:17.928228078Z</date>
-  <millis>1744970177928</millis>
-  <nanos>228078</nanos>
+  <date>2025-04-24T10:33:40.954565927Z</date>
+  <millis>1745490820954</millis>
+  <nanos>565927</nanos>
   <sequence>1</sequence>
   <logger>triangleLogger</logger>
   <level>FINER</level>
@@ -124,9 +272,9 @@ SEVERE: Message with level severe
   <message>ENTRY</message>
 </record>
 <record>
-  <date>2025-04-18T09:56:17.928947854Z</date>
-  <millis>1744970177928</millis>
-  <nanos>947854</nanos>
+  <date>2025-04-24T10:33:40.955621269Z</date>
+  <millis>1745490820955</millis>
+  <nanos>621269</nanos>
   <sequence>2</sequence>
   <logger>triangleLogger</logger>
   <level>FINER</level>
@@ -136,9 +284,9 @@ SEVERE: Message with level severe
   <message>appending LINE</message>
 </record>
 <record>
-  <date>2025-04-18T09:56:17.938675727Z</date>
-  <millis>1744970177938</millis>
-  <nanos>675727</nanos>
+  <date>2025-04-24T10:33:40.962442901Z</date>
+  <millis>1745490820962</millis>
+  <nanos>442901</nanos>
   <sequence>3</sequence>
   <logger>triangleLogger</logger>
   <level>FINEST</level>
@@ -148,9 +296,9 @@ SEVERE: Message with level severe
   <message>appending *</message>
 </record>
 <record>
-  <date>2025-04-18T09:56:17.940098822Z</date>
-  <millis>1744970177940</millis>
-  <nanos>98822</nanos>
+  <date>2025-04-24T10:33:40.963596577Z</date>
+  <millis>1745490820963</millis>
+  <nanos>596577</nanos>
   <sequence>4</sequence>
   <logger>triangleLogger</logger>
   <level>FINER</level>
@@ -160,9 +308,9 @@ SEVERE: Message with level severe
   <message>appending LINE</message>
 </record>
 <record>
-  <date>2025-04-18T09:56:17.941109424Z</date>
-  <millis>1744970177941</millis>
-  <nanos>109424</nanos>
+  <date>2025-04-24T10:33:40.964506835Z</date>
+  <millis>1745490820964</millis>
+  <nanos>506835</nanos>
   <sequence>5</sequence>
   <logger>triangleLogger</logger>
   <level>FINEST</level>
@@ -172,9 +320,9 @@ SEVERE: Message with level severe
   <message>appending *</message>
 </record>
 <record>
-  <date>2025-04-18T09:56:17.942386935Z</date>
-  <millis>1744970177942</millis>
-  <nanos>386935</nanos>
+  <date>2025-04-24T10:33:40.965382421Z</date>
+  <millis>1745490820965</millis>
+  <nanos>382421</nanos>
   <sequence>6</sequence>
   <logger>triangleLogger</logger>
   <level>FINEST</level>
@@ -184,9 +332,9 @@ SEVERE: Message with level severe
   <message>appending *</message>
 </record>
 <record>
-  <date>2025-04-18T09:56:17.943319567Z</date>
-  <millis>1744970177943</millis>
-  <nanos>319567</nanos>
+  <date>2025-04-24T10:33:40.966299372Z</date>
+  <millis>1745490820966</millis>
+  <nanos>299372</nanos>
   <sequence>7</sequence>
   <logger>triangleLogger</logger>
   <level>FINER</level>
@@ -196,154 +344,10 @@ SEVERE: Message with level severe
   <message>appending LINE</message>
 </record>
 <record>
-  <date>2025-04-18T09:56:17.944148789Z</date>
-  <millis>1744970177944</millis>
-  <nanos>148789</nanos>
+  <date>2025-04-24T10:33:40.967215198Z</date>
+  <millis>1745490820967</millis>
+  <nanos>215198</nanos>
   <sequence>8</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINEST</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangleLine</method>
-  <thread>1</thread>
-  <message>appending *</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.945039466Z</date>
-  <millis>1744970177945</millis>
-  <nanos>39466</nanos>
-  <sequence>9</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINEST</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangleLine</method>
-  <thread>1</thread>
-  <message>appending *</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.946086572Z</date>
-  <millis>1744970177946</millis>
-  <nanos>86572</nanos>
-  <sequence>10</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINEST</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangleLine</method>
-  <thread>1</thread>
-  <message>appending *</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.947069012Z</date>
-  <millis>1744970177947</millis>
-  <nanos>69012</nanos>
-  <sequence>11</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINER</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangle</method>
-  <thread>1</thread>
-  <message>appending LINE</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.948186225Z</date>
-  <millis>1744970177948</millis>
-  <nanos>186225</nanos>
-  <sequence>12</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINEST</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangleLine</method>
-  <thread>1</thread>
-  <message>appending *</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.949015672Z</date>
-  <millis>1744970177949</millis>
-  <nanos>15672</nanos>
-  <sequence>13</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINEST</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangleLine</method>
-  <thread>1</thread>
-  <message>appending *</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.949733976Z</date>
-  <millis>1744970177949</millis>
-  <nanos>733976</nanos>
-  <sequence>14</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINEST</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangleLine</method>
-  <thread>1</thread>
-  <message>appending *</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.950449897Z</date>
-  <millis>1744970177950</millis>
-  <nanos>449897</nanos>
-  <sequence>15</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINEST</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangleLine</method>
-  <thread>1</thread>
-  <message>appending *</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.951189833Z</date>
-  <millis>1744970177951</millis>
-  <nanos>189833</nanos>
-  <sequence>16</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINER</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangle</method>
-  <thread>1</thread>
-  <message>appending LINE</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.951790943Z</date>
-  <millis>1744970177951</millis>
-  <nanos>790943</nanos>
-  <sequence>17</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINEST</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangleLine</method>
-  <thread>1</thread>
-  <message>appending *</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.952382785Z</date>
-  <millis>1744970177952</millis>
-  <nanos>382785</nanos>
-  <sequence>18</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINEST</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangleLine</method>
-  <thread>1</thread>
-  <message>appending *</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.953048734Z</date>
-  <millis>1744970177953</millis>
-  <nanos>48734</nanos>
-  <sequence>19</sequence>
-  <logger>triangleLogger</logger>
-  <level>FINEST</level>
-  <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
-  <method>triangleLine</method>
-  <thread>1</thread>
-  <message>appending *</message>
-</record>
-<record>
-  <date>2025-04-18T09:56:17.953775499Z</date>
-  <millis>1744970177953</millis>
-  <nanos>775499</nanos>
-  <sequence>20</sequence>
   <logger>triangleLogger</logger>
   <level>FINEST</level>
   <class>pr2.a03.Test.TriangleWithLoggingDemo</class>
