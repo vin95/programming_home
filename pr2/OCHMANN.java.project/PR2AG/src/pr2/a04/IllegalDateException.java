@@ -2,8 +2,7 @@ package pr2.a04;
 
 public class IllegalDateException extends Exception{
 	private static final long serialVersionUID = 1L;
-	Date date;
-	String message = getMessage();
+	protected Date date;
 	
 	public IllegalDateException(Date date, String message) {
 		super(message);
@@ -11,6 +10,6 @@ public class IllegalDateException extends Exception{
 	}
 	
 	public String toString() {
-		return (message + " " + date.toString());
+		return (getMessage());
 	}
 }

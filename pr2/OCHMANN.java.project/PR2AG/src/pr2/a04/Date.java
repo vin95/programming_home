@@ -11,11 +11,13 @@ public class Date {
 	protected int year;
 	protected final static int[] days = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	
-	public Date(int day, int month, int year) {
+	public Date(int day, int month, int year) throws IllegalDateException {
 		this.day = day;
 		this.month = month;
 		this.year = year;
-		logMessage();
+		if(checkDate().length() > 0) {
+			throw new IllegalDateException(this, logMessage());
+		}
 	}
 	
 	public int getDay() {
@@ -69,22 +71,13 @@ public class Date {
 		return sb.toString();
 	}
 	
-	public void logMessage() {
-
+	public String logMessage() {
 		StringBuilder sb = new StringBuilder();
-
-		if (checkDate().length() == 0) {
-			sb.append("korrektes Datum: ");
-			sb.append(toString());
-			log.finer(sb.toString());
-		} else {
-			sb.append(String.format("%-10s%s", "falsches ", "Datum: "));
-			sb.append(toString());
-			sb.append(": ");
-			sb.append(checkDate());
-			log.severe(sb.toString());
-		}
-		return;
+		sb.append(String.format("%-10s%s", "falsches ", "Datum: "));
+		sb.append(toString());
+		sb.append(": ");
+		sb.append(checkDate());
+		return sb.toString();
 	}
 	
 	public String toString(){

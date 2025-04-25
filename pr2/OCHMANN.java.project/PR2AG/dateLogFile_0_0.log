@@ -1,22 +1,42 @@
-Apr 24, 2025 1:38:45 PM pr2.a04.Date logMessage
-SEVERE: falsches  Datum: 32.14.2009: month is out of scope [1..12], day is out of scope[1..31]
-Apr 24, 2025 1:38:45 PM pr2.a04.Date logMessage
-SEVERE: falsches  Datum: 30.02.2009: day is out of scope[1..31]
-Apr 24, 2025 1:38:45 PM pr2.a04.Date logMessage
-SEVERE: falsches  Datum: 15.13.2009: month is out of scope [1..12]
-Apr 24, 2025 1:38:45 PM pr2.a04.Date logMessage
-SEVERE: falsches  Datum: 00.01.2009: day is out of scope[1..31]
-Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
-WARNING: 41.10.3001 wurde der Datumsliste hinzugefügt!
-Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
-WARNING: 22.01.2001 wurde der Datumsliste hinzugefügt!
-Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
-WARNING: 07.07.3009 wurde der Datumsliste hinzugefügt!
-Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
-WARNING: 32.14.2009 wurde der Datumsliste hinzugefügt!
-Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
-WARNING: 30.02.2009 wurde der Datumsliste hinzugefügt!
-Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
-WARNING: 15.13.2009 wurde der Datumsliste hinzugefügt!
-Apr 24, 2025 1:38:45 PM pr2.a04.DateProvider provideDates
-WARNING: 00.01.2009 wurde der Datumsliste hinzugefügt!
+Apr 25, 2025 5:32:06 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 15.13.2009: month is out of scope [1..12]
+Apr 25, 2025 5:32:06 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 00.01.2009: day is out of scope[1..31]
+Apr 25, 2025 5:37:32 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 41.10.3001: year is out of scope [0..3000], day is out of scope[1..31]
+Apr 25, 2025 5:37:32 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
+Apr 25, 2025 5:37:32 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 32.14.2009: month is out of scope [1..12], day is out of scope[1..31]
+Apr 25, 2025 5:37:32 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 30.02.2009: day is out of scope[1..31]
+Apr 25, 2025 5:37:32 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 15.13.2009: month is out of scope [1..12]
+Apr 25, 2025 5:37:32 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 00.01.2009: day is out of scope[1..31]
+Apr 25, 2025 5:39:09 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 41.10.3001: year is out of scope [0..3000], day is out of scope[1..31]
+Apr 25, 2025 5:39:09 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
+Apr 25, 2025 5:39:09 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 32.14.2009: month is out of scope [1..12], day is out of scope[1..31]
+Apr 25, 2025 5:39:09 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 30.02.2009: day is out of scope[1..31]
+Apr 25, 2025 5:39:09 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 15.13.2009: month is out of scope [1..12]
+Apr 25, 2025 5:39:09 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 00.01.2009: day is out of scope[1..31]
+Apr 25, 2025 5:39:34 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 41.10.3001: year is out of scope [0..3000], day is out of scope[1..31]
+Apr 25, 2025 5:39:34 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 07.07.3009: year is out of scope [0..3000]
+Apr 25, 2025 5:39:34 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 32.14.2009: month is out of scope [1..12], day is out of scope[1..31]
+Apr 25, 2025 5:39:34 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 30.02.2009: day is out of scope[1..31]
+Apr 25, 2025 5:39:34 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 15.13.2009: month is out of scope [1..12]
+Apr 25, 2025 5:39:34 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 100.100.2009: month is out of scope [1..12], day is out of scope[1..31]
+Apr 25, 2025 5:39:34 PM pr2.a04.DateProvider provideDates
+WARNING: falsches  Datum: 00.01.2009: day is out of scope[1..31]

@@ -5,24 +5,46 @@ import java.util.List;
 import java.util.logging.Logger;
 
 public class DateProvider {
-	
 	public static final Logger log = MyLogger.getLogger();
 	
-	public static List<Date> provideDates(){
+	protected static int errorCount = 0;
+	protected static String logfile = MyLogger.getLogfile();
+	protected static String logfilepath = "./" + logfile;
+
+	protected static List<Date> provideDates(){
+		int[][] daten = {
+				{41, 10, 3001},
+				{22, 1, 2001},
+				{7, 7, 3009},
+				{32, 14, 2009},
+				{30, 2, 2009},
+				{15, 13, 2009},
+				{15, 7, 2009},
+				{100, 100, 2009},
+				{0, 1, 2009}
+		};
 		List<Date> dates = new ArrayList<Date>();
-		List <Date> datesTemp = new ArrayList<Date>(List.of(
-				new Date(41, 10, 3001),
-				new Date(22, 1, 2001),
-				new Date(7, 7, 3009),
-				new Date(32, 14, 2009),
-				new Date(30, 2, 2009),
-				new Date(15, 13, 2009),
-				new Date(0, 1, 2009)
-		));
-		for(Date date : datesTemp) {
-			dates.add(date);
-			log.warning(date + " wurde der Datumsliste hinzugefügt!");
+		
+		for(int[] datum : daten) {
+			try {
+				dates.add(new Date(datum[0], datum[1], datum[2]));
+			} catch (IllegalDateException e) {
+				errorCount ++;
+				log.warning(e.toString());
+			}
 		}
 		return dates;
+	}
+	
+	public static String getLogfile() {
+		return logfile;
+	}
+	
+	public static String getLogfilepath() {
+		return logfilepath;
+	}
+	
+	public static int getErrorcount() {
+		return errorCount;
 	}
 }

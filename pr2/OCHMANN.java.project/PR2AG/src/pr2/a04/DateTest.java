@@ -13,7 +13,7 @@ public class DateTest {
 		
 		final Logger log = MyLogger.getLogger(); // public static is not permitted???
 		
-		log.setLevel(Level.SEVERE);
+		log.setLevel(Level.ALL);
 //		log.finest("Message with level finest");
 //		log.finer("Message with level finer");
 //		log.fine("Message with level fine");
@@ -27,7 +27,9 @@ public class DateTest {
 		out.println("Date objects provided by DateProvider:");
 		for(Date date : dateList) {
 			out.println(date);
-		}	
+		}
+		out.println("Es wurden " + DateProvider.getErrorcount() + " inkorrekte Datumsobjekte erzeugt");
+		out.println("Die fehlerhaften Datumsobjekte sind hier dokumentiert: " + DateProvider.logfilepath);
 		out.flush();
 	}
 }

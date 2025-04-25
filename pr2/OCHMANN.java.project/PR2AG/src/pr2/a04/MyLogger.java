@@ -10,6 +10,9 @@ import java.util.logging.SimpleFormatter;
 
 // Der Quellcode dieser Klasse stammt aus dem Foliensatz von Moodle
 public final class MyLogger {
+	private final static String LOGGER_NAME = "log";
+	private final static String LOG_FILE_NAME = "dateLogFile";
+	
 	public static Logger getLogger() {
 		init();
 		return Logger.getLogger(LOGGER_NAME);
@@ -17,10 +20,7 @@ public final class MyLogger {
 	
 	private MyLogger(){
 		
-	}
-	
-	private final static String LOGGER_NAME = "log";
-	private final static String LOG_FILE_NAME = "dateLogFile";
+	}	
 	
 	private static Logger logger;
 	private static boolean INIT_DONE = false;
@@ -47,7 +47,11 @@ public final class MyLogger {
 		}
 		fileHandler.setLevel(Level.ALL);
 		
-		logger.addHandler(consoleHandler);
+//		logger.addHandler(consoleHandler);
 		logger.addHandler(fileHandler);
+	}
+	
+	public static String getLogfile() {
+		return LOG_FILE_NAME;
 	}
 }
