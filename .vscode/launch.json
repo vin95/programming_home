@@ -1,0 +1,209 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "FirstMethods",
+            "request": "launch",
+            "mainClass": "pr1.a01.FirstMethods",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "FirstMethods(1)",
+            "request": "launch",
+            "mainClass": "pr1.a01.ue.FirstMethods",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "Schachbrett",
+            "request": "launch",
+            "mainClass": "pr1.a02.Schachbrett",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "SomeFunctions",
+            "request": "launch",
+            "mainClass": "pr1.a02.SomeFunctions",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "Aufgabe0310",
+            "request": "launch",
+            "mainClass": "pr1.a03.Aufgabe0310",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "SomeFormats",
+            "request": "launch",
+            "mainClass": "pr1.a03.SomeFormats",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "TestSchachbrett",
+            "request": "launch",
+            "mainClass": "pr1.a03.TestSchachbrett",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "FirstInput",
+            "request": "launch",
+            "mainClass": "pr1.a04.FirstInput",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "VorbereitungInput",
+            "request": "launch",
+            "mainClass": "pr1.a04.vb.VorbereitungInput",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "AdressPlay",
+            "request": "launch",
+            "mainClass": "pr1.a05.AdressPlay",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "AdressPlay(1)",
+            "request": "launch",
+            "mainClass": "pr1.a05.ue.AdressPlay",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "VorbereitungOOP",
+            "request": "launch",
+            "mainClass": "pr1.a05.vb.VorbereitungOOP",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "PersonTest",
+            "request": "launch",
+            "mainClass": "pr1.a06.PersonTest",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "TestGraphics",
+            "request": "launch",
+            "mainClass": "pr1.a07.TestGraphics",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "pr1.a07.test.Test",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "TestDP",
+            "request": "launch",
+            "mainClass": "pr1.a07.test.TestDP",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "LandschaftsTest",
+            "request": "launch",
+            "mainClass": "pr1.a08.LandschaftsTest",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "TestThePersons",
+            "request": "launch",
+            "mainClass": "pr1.a09.TestThePersons",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "pr1.a10.Main",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "PointPainter",
+            "request": "launch",
+            "mainClass": "pr1.a10.PointPainter",
+            "projectName": "PR1AG"
+        },
+        {
+            "type": "java",
+            "name": "DirListing",
+            "request": "launch",
+            "mainClass": "pr2.a01.DirListing",
+            "projectName": "PR2AG"
+        },
+        {
+            "type": "java",
+            "name": "Test(1)",
+            "request": "launch",
+            "mainClass": "pr2.a02.Test",
+            "projectName": "PR2AG"
+        },
+        {
+            "type": "java",
+            "name": "DateTest",
+            "request": "launch",
+            "mainClass": "pr2.a03.DateTest",
+            "projectName": "PR2AG"
+        },
+        {
+            "type": "java",
+            "name": "TriangleWithLoggingDemo",
+            "request": "launch",
+            "mainClass": "pr2.a03.Test.TriangleWithLoggingDemo",
+            "projectName": "PR2AG"
+        },
+        {
+            "type": "java",
+            "name": "DateTest(1)",
+            "request": "launch",
+            "mainClass": "pr2.a04.DateTest",
+            "projectName": "PR2AG"
+        },
+        {
+            "type": "java",
+            "name": "Hello",
+            "request": "launch",
+            "mainClass": "myPack.Hello",
+            "projectName": "TEST01 (2)"
+        },
+        {
+            "type": "java",
+            "name": "Hello(1)",
+            "request": "launch",
+            "mainClass": "myPack.Hello",
+            "projectName": "TEST01"
+        }
+    ]
+}
