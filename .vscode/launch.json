@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PartialDownloader",
+            "request": "launch",
+            "mainClass": "com.example.downloader.PartialDownloader"
+        },
+        {
+            "type": "java",
             "name": "SortUtils",
             "request": "launch",
             "mainClass": "SortUtils"
