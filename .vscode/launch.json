@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SortUtils",
+            "request": "launch",
+            "mainClass": "SortUtils"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App"
