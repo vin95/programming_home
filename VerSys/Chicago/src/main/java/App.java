@@ -29,18 +29,18 @@ public class App {
                     "&$group=" + group +
                     "&$order=" + order +
                     "&$limit=" + limit;
-
-            // Zeitmessung starten
-            Instant start = Instant.now();
-
+            
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(queryUrl))
-                    .header("Accept", "application/json")
-                    .header("X-App-Token", APP_TOKEN)
-                    .GET()
-                    .build();
-
+                            .uri(URI.create(queryUrl))
+                            .header("Accept", "application/json")
+                            .header("X-App-Token", APP_TOKEN)
+                            .GET()
+                            .build();
+            
+            // Zeitmessung starten
+            Instant start = Instant.now();
+            
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
             // Zeitmessung beenden
