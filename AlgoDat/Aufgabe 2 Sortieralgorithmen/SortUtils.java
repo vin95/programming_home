@@ -121,7 +121,7 @@ public class SortUtils {
         int[] numbers = {10, 3, 5, 4, 8, 2, 9, 1, 6, 7};
         PrintWriter out = new PrintWriter(System.out);
         out.println(Arrays.toString(numbers));
-        heapSort(numbers);
+        mergeSort(numbers);
         out.println(Arrays.toString(numbers));
         out.flush();
     }
