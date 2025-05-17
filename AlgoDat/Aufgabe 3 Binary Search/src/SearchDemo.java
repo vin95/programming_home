@@ -14,6 +14,10 @@ public class SearchDemo {
             StringBuffer sb = new StringBuffer();
             sb.append((char) ('a' + random.nextInt(26)));
 
+            for (int j = 1; j < STRLEN; j++){
+                sb.append((char) ('a' + random.nextInt(26)));
+            }
+
             s[i] = sb.toString();
             sb = null;
         }
@@ -22,13 +26,12 @@ public class SearchDemo {
 
     public static void main(String[] args){
         BinarySearch<String> bs = new BinarySearch<String>();
-        String[] s = randomStrings(128);
+        String[] s = randomStrings(10);
         String x = s[0];
 
         Arrays.sort(s);
         System.out.println(Arrays.toString(s));
 
         System.out.println("x: " + x + "; Index: " + bs.search(s, x));
-        System.out.println("x: abc; Index: " + bs.search(s, x));        
     }
 }
