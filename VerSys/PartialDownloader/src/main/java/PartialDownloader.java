@@ -215,7 +215,7 @@ public class PartialDownloader {
     }
     
     public static String createFileNameBlocks(String URI){
-        return URI.substring(URI.lastIndexOf("/") + 1).replaceAll("[^a-zA-Z0-9\\.\\-]", "_");
+        return URI.substring(URI.lastIndexOf("/") + 1).replaceAll("[^a-zA-Z0-9\\.\\-\\%]", "_");
     }
 
     public static int setBlocksize(String blocksize){
