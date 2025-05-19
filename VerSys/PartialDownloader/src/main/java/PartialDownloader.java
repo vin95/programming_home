@@ -5,15 +5,21 @@ import java.util.*;
 public class PartialDownloader {
     public static void main(String[] args) {
 
-        // überprüft ob ein Argument übergeben wurde
-        if (args.length < 1) {
-            System.out.println("Bitte eine URL als Argument angeben.");
+        // überprüft ob zwei Argumente übergeben wurden
+        if (args.length < 2) {
+            System.out.println("Bitte eine URL und eine Blockgröße(MB) als Argument angeben.");
             System.exit(1);
         }
         
         String URI = args[0];
-        String saveFilePath = "20MB_test_download";
+        String saveFilePath = createFileName(URI, false);
+        String saveFilePathTemp = "temp/" + createFileName(URI, true);
+        String saveFilePathSatus = "status.txt";
+        PrintWriter outStatus = new PrintWriter(System.out);
         int maxBytes = 20 * 1024 * 1024; // 20 MB
+        int blocksize = setBlocksize(args[1]);
+
+        outStatus.println(URI);
 
         try {
             URL url = createURL(URI);
@@ -109,5 +115,37 @@ public class PartialDownloader {
                 System.out.println(URI + " is not a valid URL.");
             }            
         }
+
+        public static createFileName(String URI, boolean temp){
+            int index = URI.lastIndexOf("/");
+            String key = (index + 1 < URI.length() ? "FILENAME" : "DATE") + "_" + (temp ? "TEMP" : "NOTEMP");
+            
+            switch (key) {
+                case "FILENAME_NOTEMP":
+                    return String result = URI.substring(index + 1);
+                case "FILENAME_TEMP":
+                    return String result = URI.substring(index + 1) + "temp";
+                case "DATE_NOTEMP":
+                    LocalDateTime dateTime = LocalDateTime.now();
+                    return dateTime.toString();
+                case "DATE_TEMP":
+                    LocalDateTime dateTime = LocalDateTime.now();
+                    return dateTime.toString() + "temp";
+            }
+
+            if (index != -1) {
+                if (index + 1 < original.length()){
+                    return String result = original.substring(index + 1);
+                } else {
+                    LocalDateTime dateTime = LocalDateTime.now();
+                    return dateTime.toString();
+                }
+            }
+        }
+
+        public static int setBlocksize(String blocksize){
+            return Integer.parseInt(blocksize) * 1024 * 1024; // blocksize MB
+        }
+        outStatus.flush;
     }
 }
