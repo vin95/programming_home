@@ -1,7 +1,6 @@
 
 import java.io.*;
 import java.net.*;
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.nio.file.Files;
@@ -51,8 +50,8 @@ public class PartialDownloader {
         System.out.printf("Fortsetzen ab Block %d (%d Bytes bereits geladen)%n", counterBlocks, alreadyDownloaded);
         
         try (PrintWriter outStatus = new PrintWriter(new FileWriter(saveFilePathStatus, true))){
-            
-            outStatus.println(URIAsString);
+            String timestamp = LocalDateTime.now().toString();
+            outStatus.printf("[%s] %s [Blocks: %d, Bytes: %d]%n", timestamp, URIAsString, counterBlocks - 1, alreadyDownloaded);
 
             try {
                 URL url = createUrlFromString(URIAsString);
