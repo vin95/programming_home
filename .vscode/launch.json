@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PartialDownloader",
+            "request": "launch",
+            "mainClass": "PartialDownloader",
+            "projectName": "partial-downloader"
+        },
+        {
+            "type": "java",
             "name": "test",
             "request": "launch",
             "mainClass": "test"

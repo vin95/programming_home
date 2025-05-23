@@ -1,8 +1,7 @@
+package pr2.a05;
 import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
-
-import pr2.a05.SmileyView;
 
 @SuppressWarnings("serial")
 public class SmileyTest {
