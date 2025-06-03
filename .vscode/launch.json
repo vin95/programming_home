@@ -6,6 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LinkedListTest",
+            "request": "launch",
+            "mainClass": "LinkedListTest"
+        },
+        {
+            "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "LinkedList"
+        },
+        {
+            "type": "java",
             "name": "PartialDownloader",
             "request": "launch",
             "mainClass": "PartialDownloader",
