@@ -218,7 +218,13 @@ public class PartialDownloader {
         return URI.substring(URI.lastIndexOf("/") + 1).replaceAll("[^a-zA-Z0-9\\.\\-\\%]", "_");
     }
 
-    public static int setBlocksize(String blocksize){
-        return Integer.parseInt(blocksize) * 1024 * 1024; // blocksize MB
+    public static int setBlocksize(String blocksize) {
+        try {
+            return Integer.parseInt(blocksize.trim()) * 1024 * 1024;
+        } catch (NumberFormatException e) {
+            System.out.println("Ungültige Blockgröße: " + blocksize + ". Bitte eine ganze Zahl in MB hinter der URL angeben.");
+            System.exit(1);
+            return -1; // wird nie erreicht, aber notwendig für Compiler
+        }
     }
 }
