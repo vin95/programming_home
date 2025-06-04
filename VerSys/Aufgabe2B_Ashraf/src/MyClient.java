@@ -4,21 +4,27 @@ import java.security.MessageDigest;
 
 public class MyClient {
     public static void main(String[] args) {
-        if (args.length != 1 || !args[0].contains(":")) {
-            System.out.println("Usage: java MyClient <server-name:file>");
-            return;
+        if (args.length != 2 || !args[0].contains(":")) {
+          System.out.println("Usage: java MyClient <server-name:file> <port> (server-name: 141.64.89.169:file.bin");
+          return;
         }
-
+        
+        int port = Integer.parseInt(args[1]);
+        
         String[] parts = args[0].split(":");
         String serverName = parts[0];
         String fileName = parts[1];
         System.out.println(serverName);
-        try (Socket socket = new Socket(serverName, 8088)) {
+        try (Socket socket = new Socket(serverName, port)) {
             System.out.println("Connected to server: " + serverName);
 
             // Anfrage senden
-            PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
-            writer.println(fileName);
+            // PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
+            // writer.println(fileName);
+            
+            OutputStream outStream = socket.getOutputStream();
+            outStream.write((fileName + "\n").getBytes("UTF-8"));
+            outStream.flush();
 
             // Timer starten
             long startTime = System.nanoTime();
@@ -28,7 +34,7 @@ public class MyClient {
             try (BufferedInputStream in = new BufferedInputStream(socket.getInputStream());
                  BufferedOutputStream fileOut = new BufferedOutputStream(new FileOutputStream(outFile))) {
 
-                byte[] buffer = new byte[8192];
+                byte[] buffer = new byte[65536];
                 int count;
                 while ((count = in.read(buffer)) > 0) {
                     fileOut.write(buffer, 0, count);

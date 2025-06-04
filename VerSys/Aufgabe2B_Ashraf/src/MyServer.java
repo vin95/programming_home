@@ -1,6 +1,7 @@
 import java.io.*;
 import java.net.*;
 
+//erwartet aufrufen mit Befehl java MyClient 8088(port)
 public class MyServer {
     public static void main(String[] args) {
         if (args.length != 1) {
@@ -17,8 +18,17 @@ public class MyServer {
                 try (Socket clientSocket = serverSocket.accept()) {
                     System.out.println("Client connected: " + clientSocket.getInetAddress());
 
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-                    String fileName = reader.readLine();  // Datei vom Client anfordern
+                    //BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+                    //String fileName = reader.readLine();  // Datei vom Client anfordern
+                    
+                    InputStream inStream = clientSocket.getInputStream();
+                    StringBuilder sb = new StringBuilder();
+                    int c;
+                    while ((c = inStream.read()) != -1 && c != '\n') {
+                      sb.append((char) c);
+                    }
+                    String fileName = sb.toString();
+                    
                     System.out.println("Client requested: " + fileName);
 
                     File file = new File(fileName);
@@ -32,8 +42,9 @@ public class MyServer {
                     // Datei senden
                     try (BufferedOutputStream out = new BufferedOutputStream(clientSocket.getOutputStream());
                          BufferedInputStream fileIn = new BufferedInputStream(new FileInputStream(file))) {
-			System.out.println("Starting File transfer");
-                        byte[] buffer = new byte[8192];
+			                  System.out.println("Starting File transfer");
+                        //byte[] buffer = new byte[8192];
+                        byte[] buffer = new byte[65536];
                         int count;
                         while ((count = fileIn.read(buffer)) > 0) {
                             out.write(buffer, 0, count);
