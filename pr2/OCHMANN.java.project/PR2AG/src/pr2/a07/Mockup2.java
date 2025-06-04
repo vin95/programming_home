@@ -19,6 +19,7 @@ public class Mockup2 {
 		Frame frame = new Frame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(800, 600);
+		frame.setJMenuBar(new SmileyMenubar(Color.BLUE));
 		frame.setVisible(true);
 	}
 	
@@ -26,9 +27,6 @@ public class Mockup2 {
 		public Frame() {
 			setTitle("Frame");
 			getContentPane().setLayout(new BorderLayout());
-			getContentPane().add(new SmileyToolbar(Color.BLACK), BorderLayout.NORTH);
-			getContentPane().add(new SmileyToolbar(Color.BLACK), BorderLayout.EAST);
-			getContentPane().add(new SmileyToolbar(Color.BLACK), BorderLayout.SOUTH);
 			getContentPane().add(new SmileyToolbar(Color.BLACK), BorderLayout.WEST);
 			getContentPane().add(new NestedComponentsFrame(), BorderLayout.CENTER);
 		}
@@ -39,8 +37,6 @@ public class Mockup2 {
 			setLayout(new BorderLayout());
 			add(new ControlPanel(Color.YELLOW), BorderLayout.EAST);
 			add(new GPanel(Color.MAGENTA), BorderLayout.CENTER);
-			add(new SmileyToolbar(Color.CYAN), BorderLayout.WEST);
-			add(new SmileyMenubar(Color.BLACK), BorderLayout.NORTH);
 		}
 	}
 	
