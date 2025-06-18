@@ -13,8 +13,16 @@ import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
 public class SmileyView extends JPanel {
-	protected Point2D position = new Point2D.Double(100, 50);
-	protected SmileyModel model = new SmileyModel(position, 100, false);
+	protected SmileyModel model;
+	protected Point2D position;
+	protected Boolean smile;
+	
+	public SmileyView (SmileyModel model) {
+		this.model = model;
+		position = model.getPosition();
+		smile = model.getSmile();
+		model.update();
+	}
 	
 	@Override
 	protected void paintComponent(Graphics g){
@@ -36,7 +44,7 @@ public class SmileyView extends JPanel {
 				);
 		g2.setPaint(Color.BLACK);
 		g2.draw(head);
-		if (model.smile) {
+		if (model.getSmile()) {
 			g2.setPaint(Color.GREEN);
 		} else {
 			g2.setPaint(Color.RED);

@@ -24,36 +24,102 @@ public class SmileyModel {
 		this.radiusHead = radiusHead;
 		this.smile = smile;
 		
-		radiusEye = radiusHead * 0.25;
-		diameterEye = radiusEye * 2;
-		middlePoint = new Point2D.Double (
-				position.getX() + radiusHead,
-				position.getY() + radiusHead
+		radiusEye = calculateRadiusEye();
+		diameterEye = calculateDiameterEye();
+		middlePoint = calculateMiddlePoint();
+		diameterPupil = calculateDiameterPupil();
+		radiusPupil = calculateRadiusPupil();
+		lengthNose = calculateLengthNose();
+		widthNose = calculateWidthNose();
+		positionEye1 = calculatePositionEye1();
+		positionEye2 = calculatePositionEye2();
+		positionPupil1 = calculatePositionPupil1();
+		positionPupil2 = calculatePositionPupil2();
+		positionNose = calculatePositionNose();
+	}
+	
+	public double calculateRadiusEye(){
+		setRadiusEye(getRadiusHead() * 0.25);
+		return getRadiusHead();
+	}
+	
+	public double calculateDiameterEye(){
+		setDiameterEye(getRadiusEye() * 2);
+		return getRadiusEye();
+	}
+	
+	public Point2D.Double calculateMiddlePoint(){
+		Point2D.Double position = new Point2D.Double (
+				getPosition().getX() + getRadiusHead(),
+				getPosition().getY() + getRadiusHead()
 				);
-		diameterPupil = diameterEye * 0.5;
-		radiusPupil = diameterPupil / 2;
-		lengthNose = diameterEye * 0.8;
-		widthNose = lengthNose * 0.08;
-		positionEye1 = new Point2D.Double (
-				middlePoint.getX() - diameterEye - radiusHead * 0.2,
-				position.getY() + radiusHead / 2
+		setMiddlePoint(position);
+		return position;
+	}
+	
+	public double calculateDiameterPupil() {
+		setDiameterPupil(getDiameterEye() * 0.5);
+		return getDiameterEye();
+	}
+	
+	public double calculateRadiusPupil() {
+		setRadiusPupil(getDiameterPupil() / 2);
+		return getDiameterPupil();
+	}
+	
+	public double calculateLengthNose() {
+		setLengthNose(getDiameterEye() * 0.8);
+		return getDiameterEye();
+	}
+	
+	public double calculateWidthNose() {
+		setWidthNose(getLengthNose() * 0.08);
+		return getLengthNose();
+	}
+	
+	public Point2D.Double calculatePositionEye1(){
+		Point2D.Double position = new Point2D.Double (
+				getMiddlePoint().getX() - getDiameterEye() - getRadiusHead() * 0.2,
+				getPosition().getY() + getRadiusHead() / 2
 				);
-		positionEye2 = new Point2D.Double (
-				middlePoint.getX() + radiusHead * 0.2,
-				positionEye1.getY()
+		setPositionEye1(position);
+		return position;
+	}
+	
+	public Point2D.Double calculatePositionEye2(){
+		Point2D.Double position = new Point2D.Double (
+				getMiddlePoint().getX() + getRadiusHead() * 0.2,
+				getPositionEye1().getY()
 				);
-		positionPupil1 = new Point2D.Double (
-				positionEye1.getX() + radiusEye - radiusPupil,
-				positionEye1.getY() + radiusEye * 0.8 - radiusPupil
+		setPositionEye2(position);
+		return position;
+	}
+	
+	public Point2D.Double calculatePositionPupil1(){
+		Point2D.Double position = new Point2D.Double (
+				getPositionEye1().getX() + getRadiusEye() - getRadiusPupil(),
+				getPositionEye1().getY() + getRadiusEye() * 0.8 - getRadiusPupil()
 				);
-		positionPupil2 = new Point2D.Double (
-				positionEye2.getX() + radiusEye - radiusPupil,
-				positionEye2.getY() + radiusEye * 0.8 - radiusPupil
+		setPositionPupil1(position);
+		return position;
+	}
+	
+	public Point2D.Double calculatePositionPupil2(){
+		Point2D.Double position =  new Point2D.Double (
+				getPositionEye2().getX() + getRadiusEye() - getRadiusPupil(),
+				getPositionEye2().getY() + getRadiusEye() * 0.8 - getRadiusPupil()
 				);
-		positionNose = new Point2D.Double (
-				middlePoint.getX() - widthNose / 2,
-				middlePoint.getY() - lengthNose / 2
+		setPositionPupil2(position);
+		return position;
+	}
+	
+	public Point2D.Double calculatePositionNose(){
+		Point2D.Double position = new Point2D.Double(
+				getMiddlePoint().getX() - getWidthNose() / 2,
+				getMiddlePoint().getY() - getLengthNose() / 2
 				);
+		setPositionNose(position);
+		return position;
 	}
 	
 	public double getRadiusEye(){
@@ -80,7 +146,7 @@ public class SmileyModel {
 		radiusHead = newRadiusHead;
 	}
 	
-	public boolean getSmil(){
+	public boolean getSmile(){
 		return smile;
 	}
 	
@@ -100,43 +166,105 @@ public class SmileyModel {
 		return positionEye1;
 	}
 	
+	public void setPositionEye1(Point2D newPosition) {
+		positionEye1 = newPosition;
+	}
+	
 	public Point2D getPositionEye2(){
 		return positionEye2;
+	}
+	
+	public void setPositionEye2(Point2D newPosition) {
+		positionEye2 = newPosition;
 	}
 	
 	public double getDiameterEye() {
 		return diameterEye;
 	}
 	
+	public void setDiameterEye(double diameter) {
+		diameterEye = diameter;
+	}
+	
 	public Point2D getPositionPupil1(){
 		return positionPupil1;
 	}
 	
+	public void setPositionPupil1(Point2D position) {
+		positionPupil1 = position;
+	}
+	
 	public Point2D getPositionPupil2(){
 		return positionPupil2;
+	}
+	
+	public void setPositionPupil2(Point2D position) {
+		positionPupil2 = position;
 	}
 
 	public double getDiameterPupil() {
 		return diameterPupil;
 	}
 	
+	public void setDiameterPupil(double diameter) {
+		diameterPupil = diameter;
+	}
+	
 	public double getLengthNose(){
 		return lengthNose;
+	}
+	
+	public void setLengthNose(double length){
+		lengthNose = length;
 	}
 
 	public double getWidthNose(){
 		return widthNose;
 	}
 	
+	public void setWidthNose(double width){
+		widthNose = width;
+	}
+	
 	public Point2D getPositionNose(){
 		return positionNose;
 	}
 	
-	public void setLengthNose(double newLenghtNose) {
-		lengthNose = newLenghtNose;
+	private void setPositionNose(Point2D position) {
+		positionNose = position;
 	}
 	
 	public Point2D getMiddlePoint(){
 		return middlePoint;
+	}
+	
+	public void setMiddlePoint(Point2D position) {
+		middlePoint = position;
+	}
+	
+	public void changeSize(double factor) {
+		setRadiusHead(getRadiusHead() + getRadiusHead() * factor);
+	}
+	
+	public void changeEyes(double factor) {
+		setRadiusEye(getRadiusEye() + getRadiusEye() * factor);
+		calculateDiameterEye();
+		calculateDiameterPupil();
+		calculateRadiusPupil();
+	}
+	
+	public void update() {
+		calculateRadiusEye();
+		calculateDiameterEye();
+		calculateMiddlePoint();
+		calculateDiameterPupil();
+		calculateRadiusPupil();
+		calculateLengthNose();
+		calculateWidthNose();
+		calculatePositionEye1();
+		calculatePositionEye2();
+		calculatePositionPupil1();
+		calculatePositionPupil2();
+		calculatePositionNose();
 	}
 }

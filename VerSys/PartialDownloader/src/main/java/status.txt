@@ -1,5 +1,5 @@
-[2025-06-06T02:56:10.634007800] Block 1 gespeichert: 1G_block1.part (8,00 MB)
-[2025-06-06T02:56:10.932013600] Block 2 gespeichert: 1G_block2.part (8,00 MB)
-[2025-06-06T02:56:11.063411600] Block 3 gespeichert: 1G_block3.part (4,00 MB)
-[2025-06-06T02:56:10.146359300] Größe der ganzen Datei: 1048576000 Bytes (1000,00 MB)
-[2025-06-06T02:56:10.146359300] http://speedtest.belwue.net/1G [Blocks: 0, Bytes: 0]
+[2025-06-06T03:15:50.619336055] Block 1 gespeichert: 1G_block1.part (8.00 MB)
+[2025-06-06T03:15:50.883451533] Block 2 gespeichert: 1G_block2.part (8.00 MB)
+[2025-06-06T03:15:51.022924399] Block 3 gespeichert: 1G_block3.part (3.99 MB)
+[2025-06-06T03:15:50.028713986] Größe der ganzen Datei: 1048576000 Bytes (1000.00 MB)
+[2025-06-06T03:15:50.028713986] http://speedtest.belwue.net/1G [Blocks: 0, Bytes: 0]
