@@ -3,9 +3,6 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.geom.Point2D;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -17,7 +14,6 @@ import javax.swing.JMenuBar;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.JToolBar;
-import javax.swing.event.ChangeEvent;
 
 // Quelle der Icons: https://sourceforge.net/projects/openiconlibrary/
 
@@ -25,7 +21,10 @@ import javax.swing.event.ChangeEvent;
 public class SmileyApp2023 {
 
 	public static void main(String[] args) {
-		EventSmileyFrame frame = new EventSmileyFrame();
+		SmileyModel model = new SmileyModel();
+		SmileyView view = new SmileyView(model);
+		SmileyController controller = new SmileyController(model, view);
+		EventSmileyFrame frame = new EventSmileyFrame(model, view, controller);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(800, 600);
 		frame.setJMenuBar(new SmileyMenubar(Color.BLUE));
@@ -33,93 +32,62 @@ public class SmileyApp2023 {
 	}
 	
 	private static class EventSmileyFrame extends JFrame {
-		public EventSmileyFrame() {
-			Point2D position = new Point2D.Double(100, 100);
-			
+		public EventSmileyFrame(SmileyModel model, SmileyView view, SmileyController controller) {			
 			setTitle("SmileyEventHandling");
-			SmileyModel model = new SmileyModel(position, 100, true);
-			SmileyView view = new SmileyView(model);
 			getContentPane().setLayout(new BorderLayout());
-			getContentPane().add(new SmileyToolbar(Color.BLACK), BorderLayout.WEST);
-			getContentPane().add(new NestedComponentsFrame(model, view), BorderLayout.CENTER);
+			getContentPane().add(new SmileyToolbar(Color.BLACK, controller), BorderLayout.WEST);
+			getContentPane().add(new NestedComponentsFrame(view, controller), BorderLayout.CENTER);
 		}
 	}
 	
 	private static class NestedComponentsFrame extends JPanel {
-		public NestedComponentsFrame(SmileyModel model, SmileyView view) {
+		public NestedComponentsFrame(SmileyView view, SmileyController controller) {
 			setLayout(new BorderLayout());
-			add(new ControlPanel(Color.YELLOW, model, view), BorderLayout.EAST);
-			add(new GPanel(Color.MAGENTA, model, view), BorderLayout.CENTER);
+			add(new ControlPanel(Color.YELLOW, controller), BorderLayout.EAST);
+			add(new GPanel(Color.MAGENTA, view), BorderLayout.CENTER);
 		}
 	}
 	
-	private static class ControlPanel extends JPanel implements ActionListener{
-		protected SmileyModel model;
-		protected SmileyView view;
+	private static class ControlPanel extends JPanel{
 		
-		public ControlPanel(Color color, SmileyModel model, SmileyView view) {
-			this.model = model;
-			this.view = view;
+		public ControlPanel(Color color, SmileyController controller) {
 						
 			JButton buttonIncSize = new JButton("increase size");
 			buttonIncSize.setActionCommand(Command.SMILEY_SIZE_INC);
-			buttonIncSize.addActionListener(this::actionPerformed);
+			buttonIncSize.addActionListener(controller);
 			
 			JButton buttonDecSize = new JButton("decrease size");
 			buttonDecSize.setActionCommand(Command.SMILEY_SIZE_DEC);
-			buttonDecSize.addActionListener(this::actionPerformed);
+			buttonDecSize.addActionListener(controller);
 			
 			JSlider sliderSize = new JSlider(10, 500, 200);
 			sliderSize.setMajorTickSpacing(100);
 			sliderSize.setMinorTickSpacing(25);
 			sliderSize.setPaintTicks(true);
 			sliderSize.setName(Command.SLIDER_CHANGE_SIZE);
-			sliderSize.addChangeListener(this::sliderStateChanged);
+			sliderSize.addChangeListener(controller);
+			
+			JSlider sliderEyes = new JSlider(10, 500, 200);
+			sliderEyes.setMajorTickSpacing(100);
+			sliderEyes.setMinorTickSpacing(25);
+			sliderEyes.setPaintTicks(true);
+			sliderEyes.setName(Command.SLIDER_CHANGE_EYES);
+			sliderEyes.addChangeListener(controller);
+			
+//			System.out.println("Slider-Name: " + sliderEyes.getName());
 			
 			setLayout(new GridLayout(5,1));
 			add(buttonIncSize);
 			add(buttonDecSize);
 			add(sliderSize);
+			add(sliderEyes);
 			
-			setBackground(Color.BLUE);
-		}
-		
-		private void sliderStateChanged(ChangeEvent e) {
-			Object source = e.getSource();
-			if (! (source instanceof JSlider)) {
-				System.out.println("something went wrong");
-				return;
-			}
-			JSlider slider = (JSlider) source;
-			double value = slider.getValue();
-			String slidername = slider.getName();
-			switch (slidername) {
-			case Command.SLIDER_CHANGE_SIZE:
-				model.setRadiusHead(value);
-				break;
-			}
-			model.update(); //warum sollte man in view eine preparedrawingmethode schreiben, wenn diese nur die Modelmethoden für das update aufruft?
-			view.repaint();
-		}
-		
-		@Override
-		public void actionPerformed(ActionEvent event) {
-		    switch (event.getActionCommand()) {
-		        case Command.SMILEY_SIZE_INC:
-		            model.changeSize(0.1);
-				    model.update();
-		            break;
-		        case Command.SMILEY_SIZE_DEC:
-		            model.changeSize(-0.1);
-				    model.update();
-		            break;
-		    }
-		    view.repaint();
+			setBackground(color);
 		}
 	}
 	
 	private static class GPanel extends JPanel {
-		public GPanel(Color color, SmileyModel model, SmileyView view) {
+		public GPanel(Color color, SmileyView view) {
 			setPreferredSize(new Dimension (400, 600));
 			setBackground(color);
 			setLayout(new BorderLayout());
@@ -127,14 +95,10 @@ public class SmileyApp2023 {
 		}
 	}
 	
-	private static class Command{
-		public final static String SMILEY_SIZE_INC = "SMILEY_SIZE_INC";
-		public final static String SMILEY_SIZE_DEC = "SMILEY_SIZE_DEC";
-		public final static String SLIDER_CHANGE_SIZE = "SLIDER_CHANGE_SIZE";
-	}
+	
 	
 	private static class SmileyToolbar extends JToolBar {
-		public SmileyToolbar(Color color) {
+		public SmileyToolbar(Color color, SmileyController controller) {
 			setPreferredSize(new Dimension (200, 400));
 			setBackground(color);
 			setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
@@ -151,15 +115,23 @@ public class SmileyApp2023 {
 			
 			add(Box.createVerticalGlue()); // Flexibler Abstand oben
 			iconButton1.setAlignmentX(CENTER_ALIGNMENT);
+			iconButton1.setActionCommand(Command.SMILEY_SIZE_INC);
+			iconButton1.addActionListener(controller);
 			add(iconButton1);
 			add(Box.createVerticalStrut(10));
 			iconButton2.setAlignmentX(CENTER_ALIGNMENT);
+			iconButton2.setActionCommand(Command.SMILEY_SIZE_DEC);
+			iconButton2.addActionListener(controller);
 			add(iconButton2);
 			add(Box.createVerticalStrut(10));
 			iconButton3.setAlignmentX(CENTER_ALIGNMENT);
+			iconButton3.setActionCommand(Command.SMILEY_EYE_INC);
+			iconButton3.addActionListener(controller);
 			add(iconButton3);
 			add(Box.createVerticalStrut(10));
 			iconButton4.setAlignmentX(CENTER_ALIGNMENT);
+			iconButton4.setActionCommand(Command.SMILEY_EYE_DEC);
+			iconButton4.addActionListener(controller);
 			add(iconButton4);
 			add(Box.createVerticalGlue()); // Flexibler Abstand unten
 			
