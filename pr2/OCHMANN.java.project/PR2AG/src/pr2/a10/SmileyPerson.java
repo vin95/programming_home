@@ -69,7 +69,7 @@ public class SmileyPerson extends SmileyModel{
 	public int getYear() {
 		return year;
 	}
-	
+		
 	public int compareByName(SmileyPerson other) {
 		return lastname.compareToIgnoreCase(other.lastname);
 	}
@@ -96,6 +96,10 @@ public class SmileyPerson extends SmileyModel{
 
 	public boolean isYoung() {
 		return 2025 - year < 20;
+	}
+	
+	public boolean isBoomer() {
+		return 2025 - year > 20 && 2025 - year < 70;
 	}
 
 	public boolean isOld() {

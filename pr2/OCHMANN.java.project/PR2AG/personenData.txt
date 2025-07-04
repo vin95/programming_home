@@ -1,0 +1,8 @@
+Müller              Anna                 2004     100  25.000  30.000    true      50      50
+Schneider           Lukas                1950      90  22.000  28.000   false     120     150
+Meier               Julia                1985     110  26.500  35.000    true      80      95
+Fischer             Tim                  1990     105  23.000  27.000   false     200     220
+Weber               Lara                 2008      95  28.000  25.000    true      60      70
+Schulz              Emil                 1948     102  20.000  22.000   false     100     100
+Becker              Nora                 1975      98  24.500  29.000    true      90     110
+Hoffmann            Ben                  2003     103  27.000  33.000   false     130     140
